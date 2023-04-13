@@ -1,0 +1,192 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.Atg-container{
+    max-width: 1368px;
+    margin: auto;
+    animation: fade 0.2s ease-in-out;
+}
+
+
+
+.nav-form{
+    border-radius: 50px;
+    background-color:#F2F2F2 ;
+}
+
+
+.nav-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: inherit;
+    font-weight: 500;
+}
+.Banner{
+    position: relative;
+    transition: all 0.45s;
+}
+
+
+#img{
+    filter:  brightness(0.5);
+}
+
+ .details{
+    position: absolute;
+    bottom: 15%;
+    left: 10%; 
+} 
+
+.details p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navigate{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 0.25s;
+    opacity: 0;
+}
+
+.nav-bar{
+    transition: all 0.3s;
+   opacity: 1;
+}
+
+
+.filter-links a.active {
+    border-bottom: 1px solid black ;
+}
+.filter-links a{
+    padding-bottom: 15px;
+}
+
+.btn-light{
+    font-weight: 600;
+    border: none;
+    outline: none !important;
+    box-shadow: none!important ;
+    color: black;
+    background-color: #F1F3F5;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: all 0.15s;
+    padding: 8px 4px;
+    width: 130px;
+}
+
+.btn-light:hover {
+    background-color: #dedede;
+}
+
+
+.Pad-1{
+    padding: 15px;
+}
+
+.show-view{
+    display: none;
+}
+.hide-view{
+    display: initial;
+}
+
+
+.location-search input{
+    border: 0;
+    outline: 0;
+}
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    border-bottom: 1xp solid black ;
+} */
+
+.something{
+    position: absolute;
+    top: 42%;
+    right: 6%;
+    width: 150px;
+    /* height: 120px; */
+    overflow: hidden;
+    /* transition: all 0.35s; */
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    animation: fade 0.25s ease-in-out;
+}
+
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        
+            backdrop-filter: brightness(1);
+       
+    }
+    100%{
+        opacity: 1;
+        backdrop-filter: unset;
+    }
+}
+
+
+
+@media screen and ( max-width : 950px) {
+    .banner{
+        height: 236px;
+    }
+    .details p {
+        font-size: 25px!important ;
+    }
+    #img  {
+        aspect-ratio:2.5;
+        object-fit: cover;
+    }
+    .Pad-1{
+        padding: 0;
+    }
+    
+.nav-bar{
+    height: 0;
+   overflow: hidden;
+   opacity: 0;
+}
+
+.navigate{
+    opacity: 1;
+}
+}
+
+
+
+
+@media screen and ( max-width : 750px) {
+    .banner{
+        height: 236px;
+    }
+    .details p {
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+
+    
+
+    #img  {
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+
+    .show-view{
+        display: initial;
+    }
+    .hide-view{
+        display: none;
+    }
+}
